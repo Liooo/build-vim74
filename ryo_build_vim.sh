@@ -1,6 +1,9 @@
 make clean
 
 ./configure\
+ --enable-luainterp\
+ --with-luajit\
+ --with-lua-prefix=/usr/local\
  --enable-rubyinterp\
  --enable-xim\
  --enable-multibyte\
@@ -63,5 +66,5 @@ make clean
  --enable-wildmenu\
  --enable-writebackup\
  --enable-conceal\
- --enable-luainterp
+ --enable-fail-if-missing
 make
